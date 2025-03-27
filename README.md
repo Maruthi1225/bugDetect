@@ -80,8 +80,8 @@ FLASK_ENV=development
   - Check `app.py` for possible endpoint mismatches.
 
 ## Contributors
-- @Maruthi1225
-- @EshwarCharan
+- Maruthi1225
+- EshwarCharan
 
 ## License
 This project is licensed under the MIT License.
