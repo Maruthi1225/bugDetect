@@ -1,0 +1,199 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+/* Header Styling */
+header {
+    background: #0D47A1;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    margin: 2rem 0;
+}
+
+input[type="file"] {
+    margin: 1rem 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #0D47A1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1565C0;
+}
+
+/* Features Section */
+.features {
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.features h2 {
+    margin-bottom: 1rem;
+}
+
+.features ul {
+    list-style: none;
+}
+
+.features li {
+    margin: 0.5rem 0;
+}
+
+/* Loading and Result Section */
+#loading {
+    display: none;
+    color: #0D47A1;
+    font-weight: bold;
+}
+
+#result {
+    display: none;
+}
+
+/* Footer Styling */
+footer {
+    background: #0D47A1;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.footer-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+/* JSON Output Styling */
+.json-output {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+/* JSON Syntax Colors */
+.json-output .key { color: #e06c75; }
+.json-output .string { color: #98c379; }
+.json-output .number { color: #d19a66; }
+.json-output .boolean { color: #56b6c2; }
+.json-output .null { color: #c678dd; }
+
+/* Improved Output Display */
+.error-card {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.error-high {
+    background: #ffebee; 
+    border-left: 5px solid #d32f2f; 
+    color: #b71c1c;
+}
+
+.error-medium {
+    background: #fff3e0; 
+    border-left: 5px solid #ffa000; 
+    color: #f57c00;
+}
+
+.error-low {
+    background: #e8f5e9; 
+    border-left: 5px solid #388e3c; 
+    color: #2e7d32;
+}
+
+.success {
+    padding: 15px;
+    background: #e3f2fd;
+    color: #1565c0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.download-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #0D47A1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background: #1565C0;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

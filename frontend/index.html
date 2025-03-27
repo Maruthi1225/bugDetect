@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InturnStream - Code Bug Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="InturnStream Logo" />
+            <h1>InturnStream</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <h1>🚀 InturnStream Code Bug Detector</h1>
+            <p>Upload your **code files** or **projects** and identify errors across multiple languages.</p>
+
+            <!-- Upload Form -->
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label for="fileInput">Upload Project (ZIP) or Code File:</label>
+                <input type="file" id="fileInput" name="fileInput"
+                    accept=".zip, .py, .js, .java, .cpp, .c, .cs, .kt, .xml, .json, .yaml, .yml, .env, .properties, .sh, .bat, .gradle, .md, .html, .css, .ts, .jsx, .tsx, .ini, .toml, .cfg, .sql, .pl, .ipynb"
+                    required>
+                <button type="submit">🔍 Analyze</button>
+            </form>
+
+            <!-- Loading Indicator -->
+            <div id="loading" class="hidden">⏳ Analyzing your code, please wait...</div>
+
+            <!-- Result Section -->
+            <div id="result" class="hidden">
+                <h2>📊 Analysis Results</h2>
+                <pre id="output">Results will appear here...</pre>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2>✨ Why Choose InturnStream?</h2>
+            <ul>
+                <li>🔍 **Multi-Language Support**: Detect errors in Python, JavaScript, C++, Java, and more.</li>
+                <li>📊 **Detailed Reports**: Get precise error logs and recommendations.</li>
+                <li>🚀 **Fast & Efficient**: Analyze large projects quickly.</li>
+                <li>🔐 **Privacy First**: Your code remains secure during the analysis process.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 InturnStream. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
